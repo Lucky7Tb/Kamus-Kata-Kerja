@@ -46,13 +46,13 @@ public class DBHelper extends SQLiteAssetHelper {
 	
 	public Cursor getKataInggris(){
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor res = db.rawQuery("SELECT "+ column3 +" FROM "+ tableName +" WHERE "+column2+" LIKE '"+this.Kata+"%'", null);
+		Cursor res = db.rawQuery("SELECT "+ column3 +" FROM "+ tableName +" WHERE "+column2+" = '"+this.Kata+"'", null);
 		return res;
 	}
 	
 	public Cursor getKataIndo(){
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor res = db.rawQuery("SELECT "+ column2 +" FROM "+ tableName +" WHERE "+column3+" LIKE '"+this.Kata+"%'", null);
+		Cursor res = db.rawQuery("SELECT "+ column2 +" FROM "+ tableName +" WHERE "+column3+" = '"+this.Kata+"'", null);
 		return res;
 	}
 

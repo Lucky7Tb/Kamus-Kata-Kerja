@@ -76,7 +76,7 @@ public class Welcome extends Activity {
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View view) {
-						Db.setKata(formCari.getText().toString());
+						Db.setKata(formCari.getText().toString().toLowerCase());
 						if(change == 0){
 							Cursor res = Db.getKataIndo();
 							if(res.getCount()==0){
