@@ -13,8 +13,32 @@
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="159dp" />
+        android:layout_marginBottom="98dp" />
 
+    <TextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:ems="12"
+        android:text="©CopyRight Hilmi-Lucky-Iman" >
+
+        <requestFocus />
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progressBar1"
+        android:layout_marginBottom="19dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="112dp"
+        android:maxWidth="112dp"
+        android:src="@drawable/ic_buku" />
+    
 </RelativeLayout>

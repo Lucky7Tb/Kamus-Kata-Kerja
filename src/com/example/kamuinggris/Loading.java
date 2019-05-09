@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.app.Activity;
 
 public class Loading extends Activity {
-	private static int splashInterval = 5000;
+	private static int splashInterval = 2000;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
